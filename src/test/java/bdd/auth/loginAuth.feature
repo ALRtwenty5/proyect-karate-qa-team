@@ -32,3 +32,17 @@ Feature: Funcionalidad login
     When method post
     Then status 200
     * def token = $.access_token
+
+  @loginUnsuccessfully
+  Scenario Outline: Login sin éxito con <Descripcion>
+    Given url urlBase
+    And path 'api/login'
+    And request {email: <email>, password: <password>}
+    When method post
+    Then status 401
+    And match $.message == "Datos incorrectos"
+
+    Examples:
+      | Descripcion | email               | password |
+      | Correo fake | carlosz@outlook.com | 12345678 |
+      | Pass fake   | carlosz@gmail.com   | 87654321 |

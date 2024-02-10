@@ -26,7 +26,7 @@
         When method post
         Then status 200
         * print response
-        And match $.codigo == "TC0997"
+        And match $.codigo == "TC0996"
         And match $.id == '#notnull'
 
         Examples:
