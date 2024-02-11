@@ -20,9 +20,9 @@ Feature: Funcionalidad Registro
 
     Examples:
       | Descripcion | email                  | password   | nombre      | tipo_usuario_id | estado |
-      | Usuario1    | "alejandro7@gmail.com" | "90909090" | "Alejandro" | 1               | 1      |
-      | Usuario2    | "emiliano7@gmail.com"  | "90909090" | "Emiliano"  | 1               | 1      |
-      | Usuario3    | "tammy7@gmail.com"     | "90909090" | "Tammy"     | 1               | 1      |
+      | Usuario1    | "alejandro25@gmail.com" | "90909090" | "Alejandro" | 1               | 1      |
+      | Usuario2    | "emiliano11@gmail.com"  | "90909090" | "Emiliano"  | 1               | 1      |
+      | Usuario3    | "tammy27@gmail.com"     | "90909090" | "Tammy"     | 1               | 1      |
 
   @registroDuplicado
   Scenario: Registro Duplicado

@@ -17,4 +17,13 @@ public class TestRunner {
     Karate addProduct() {
         return Karate.run("product/addProduct").relativeTo(getClass());
     }
+
+    @Karate.Test
+    Karate getProduct() {
+        return Karate.run("product/getProduct").relativeTo(getClass());
+    }
+
+    @Karate.Test
+    Karate statusChange() {return Karate.run("product/statusChange").relativeTo(getClass());
+    }
 }
