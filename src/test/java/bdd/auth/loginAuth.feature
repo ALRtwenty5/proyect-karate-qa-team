@@ -1,3 +1,4 @@
+@automation-api
 Feature: Funcionalidad login
 
   Scenario: Login exitoso

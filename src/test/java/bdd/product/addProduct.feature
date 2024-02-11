@@ -11,8 +11,8 @@
 /    And match response.body == "bar"
 /    And match response.userId == 1
 //
-
-
+@automation-api
+Feature: Agregar productos
 
     Background:
         * def responseLogin = call read('classpath:bdd/auth/loginAuth.feature@login')
